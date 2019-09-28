@@ -80,6 +80,7 @@
                     <label for="jsonArea">Dein Code (bitte speichern):</label>
                     <textarea class="form-control" id="jsonArea" rows="10"></textarea>
                 </div>
+                <button id="loadTemplate" type="button" class="btn btn-outline-success float-left">Select predefined function</button>
                 <button id="loadCode" type="button" class="btn btn-outline-success float-right">Code laden</button>
             </div>
         </div>
@@ -294,6 +295,24 @@
     </div>
 </div>
 
+<div class="modal fade" id="additionalFunctionsModal" tabindex="-1" role="dialog" aria-labelledby="additionalFunctionsModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="additionalFunctionsModalLabel">Funktion wählen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <select id="funcTemplates">
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -307,10 +326,10 @@
         crossorigin="anonymous"></script>
 
 <script>
-    let predefined = ["add", "mult"
+    var predefined = ["add", "mult"];
+    var templates = ["add", "mult"
         , "leq", "between", "dec", "eq", "even", "fac", "fallfac", "half", "ifzero", "leq", "max", "odd", "risefac", "sub", "zero",
-        "neg", "ge", "sgn", "cdmax", "div", "mod", "gT", "ggT"
-    ];
+        "neg", "ge", "sgn", "cdmax", "div", "mod", "gT", "ggT"];
 </script>
 
 <script src="js/utils.js"></script>

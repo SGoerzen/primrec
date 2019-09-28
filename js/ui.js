@@ -136,6 +136,10 @@ $("#loadCode").click(function () {
     parseJSON(JSON.parse($("#jsonArea").val()));
 });
 
+$('#loadTemplate').click(function() {
+    $('#additionalFunctionsModal').modal("show");
+});
+
 function setJSON() {
     let string = JSON.stringify(funcJSON);
     $("#jsonArea").val(string);

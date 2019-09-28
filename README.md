@@ -1,10 +1,29 @@
-# Primitive Recursive Simulator
-This website allows you to simulate primitive recursive functions by defining functions using primitive recursion and the successor s(n)=n+1
+# primrec
 
+## Project setup
+```
+yarn install
+```
 
-### Please note ###
-- This is still in an early state of development.
-- I primarily created this for my own to try out some things.
-- Structure, design and commenting of code is a in bit unpleasant state.
-- I did not implement any stack optimization yet, so you should expect a stack overflow for complex functions.
-- If you have any improvements, feel free to create a pull request.
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
